@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=playfair+Display&display=swap"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section class="header-section">
+            <div class="container">
+                <h1 class="logo">Zahra Ayobi</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="portfolio-section">
+         <div class="container">
+            <h2>My Portfolio</h2>
+            <p>Explore my full collection of design projects - from digital illustrations to branding and UI mockups.</p>
+             <!--Digital Art-->
+             <section class="portfolio-category">
+                <h3>Digital Art</h3>
+                <img src="images/MOM.jpg" width="170px " height="150px" alt="Mother's Embrace Poster"/>
+                <p>Here  I present my digital painting projects, focsing on emotion, color harmony, and storytelling through illustration. These works often reflect personal inspiration and composition. A few of these piece are also displayed briefly on the <a href="index.html#digital-art">Home</a>page.
+                </p>
+                 <a href="index.html#digital-art" class="btn">See Art on Home Page</a>
+            </section>
+            
+            <!--logo Design-->
+            <section class="portfolio-category">
+                <h3>Logo Design</h3>
+                <img src="images/TOYS.jpg" width="170px " height="170px" alt="Toy Brand Logo" />
+                <p>This section featured my logo design projects, where I combine creativity with strategy to build visual identities. Form playful designs for children's brands to clean, corporate styles - each logo serves a purpose. Some of these are briefly showcased on the <a href="index.html#logo-design">Home</a>page.
+                </p>
+                <a href="index.html#logo-design" class="btn">See Logos on Home Page</a>
+            </section>
+         </div>
+        </section>
+    </main>
+    <hr>
+       <!--footer-->
+       <footer>
+        <div class="container">
+            <p>© 2025 Zahra - All rights reserved.</p>
+        </div>
+    </footer>
+    <button class="toggle-darkmode" onclick="document.body.classList.toggle('dark-mode')">Toggle Dark Mode</button>
+    <script>
+        const toggleBtn = document.querySelector(".toggle-darkmode");
+        toggleBtn?.addEventListener("click",()=> {
+            document.body.classList.toggle("dark-mode");})
+    </script>
+</body>
+</html>
